@@ -11,16 +11,6 @@ tomcat:
     protocol: AJP/1.3
     port: 9002
 
-spring:
-  thymeleaf:
-    prefix: classpath:templates/
-    suffix: .html
-    enabled: true
-    restart:
-      enabled: true
-    cache: false
-    check-template-location: true
-
 devtools: #jsp파일 서버 재시작 없이 바로 적용하기
   spring-boot-devtools livereload:
     enabled: true
@@ -42,3 +32,25 @@ devtools: #jsp파일 서버 재시작 없이 바로 적용하기
     cache: false
   restart:
     enabled: true
+
+
+spring:
+  thymeleaf:
+    prefix: classpath:templates/
+    suffix: .html
+    enabled: true
+    restart:
+      enabled: true
+    cache: false
+    check-template-location: true
+  datasource:
+    username: root
+    password: wnanswjqtn1@#
+    mapper-locations: classpath:/mapper/**/*.xml
+    driver: com.mysql.cj.jdbc.Driver
+    jdbc-url: jdbc:mysql://127.0.0.1:3306/order_lee?serverTimezone=Asia/Seoul&characterEncoding=UTF-8 # Database이름 ?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  config-location: classpath:/mybatis/mybatis-config.xml

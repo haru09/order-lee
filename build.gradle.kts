@@ -24,6 +24,12 @@ repositories {
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
 	implementation("org.springframework.boot:spring-boot-starter-web")
+	implementation("org.springframework.boot:spring-boot-starter-jdbc") // DB연결을 위한 JDBC
+
+	//https://shanepark.tistory.com/466
+	implementation("org.mybatis.spring.boot:mybatis-spring-boot-starter:1.3.2") // Mybatis
+
+	runtimeOnly("com.mysql:mysql-connector-j") 			// Mysql Connector
 	compileOnly("org.projectlombok:lombok")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	annotationProcessor("org.projectlombok:lombok")
