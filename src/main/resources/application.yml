@@ -15,14 +15,30 @@ spring:
   thymeleaf:
     prefix: classpath:templates/
     suffix: .html
+    enabled: true
+    restart:
+      enabled: true
     cache: false
     check-template-location: true
+
+devtools: #jsp파일 서버 재시작 없이 바로 적용하기
+  spring-boot-devtools livereload:
+    enabled: true
+    livereload:
+      enabled: true
+    thymeleaf:
+      cache: false
+    restart:
+      enabled: true
 
   servlet:
     multipart:
       max-file-size: 5MB
       max-request-size: 5MB
 
-devtools: #jsp?? ?? ??? ?? ?? ????
-  spring-boot-devtools livereload:
+  livereload:
+    enabled: true
+  thymeleaf:
+    cache: false
+  restart:
     enabled: true
