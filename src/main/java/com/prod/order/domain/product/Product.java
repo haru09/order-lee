@@ -1,12 +1,17 @@
 package com.prod.order.domain.product;
 
 import lombok.Data;
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+import lombok.Setter;
 
-@Data
+@Getter
+@Setter
+@RequiredArgsConstructor
 public class Product {
     private long seq;
-    private String prod_cd;
+    private String prodCd;
     private long price;
-    private Data reg_dts;
-    private String regr_no ;
+    private String regDts;
+    private String regrNo ;
 }
