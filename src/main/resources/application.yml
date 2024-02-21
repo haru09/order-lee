@@ -44,11 +44,11 @@ spring:
     cache: false
     check-template-location: true
   datasource:
+    jdbc-url: jdbc:mysql://127.0.0.1:3306/order_lee?serverTimezone=Asia/Seoul&characterEncoding=UTF-8 # Database이름 ?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
     username: root
     password: wnanswjqtn1@#
-    mapper-locations: classpath:/mapper/**/*.xml
     driver: com.mysql.cj.jdbc.Driver
-    jdbc-url: jdbc:mysql://127.0.0.1:3306/order_lee?serverTimezone=Asia/Seoul&characterEncoding=UTF-8 # Database이름 ?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    mapper-locations: classpath:/mapper/**/*.xml
 
 mybatis:
   configuration:
