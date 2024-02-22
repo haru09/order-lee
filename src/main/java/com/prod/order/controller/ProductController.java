@@ -5,11 +5,12 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 @RequiredArgsConstructor
 @Slf4j
 @Controller
-public class HomeController {
+public class ProductController {
 
     private final ProductService productService;
 
@@ -17,5 +18,14 @@ public class HomeController {
     public String home(){
         log.info("productList: {}", productService.getProductList());
         return "/page/home";
+    }
+
+    @GetMapping("/product")
+    public ModelAndView product(){
+        ModelAndView view = new ModelAndView();
+
+        view.addObject("", productService.getProductList());
+        view.setViewName("/page/product");
+        return view;
     }
 }

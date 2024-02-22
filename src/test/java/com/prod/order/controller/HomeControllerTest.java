@@ -50,7 +50,7 @@ class HomeControllerTest {
         //.andExpect(status().isOk()) : mvc.perform 의 결과를 검증하고 HTTP Header 의 Status 를 검증. 우리가 아는 그 200, 400, 500 같은 상태를 검증하는 것.
         //.andExpect(content().string(hello)) : mvc.perform 의 결과를검증하고, 본문의 내용을 검증한다. Controller 에서 리턴값이 맞나 확인.
         mockMvc
-                .perform(get("/home"))
+                .perform(get("/page/home"))
                 .andExpect(status().isOk())
                 .andExpect(content().string(home));
     }
