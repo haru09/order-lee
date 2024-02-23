@@ -35,6 +35,8 @@ devtools: #jsp파일 서버 재시작 없이 바로 적용하기
 
 
 spring:
+  resource:
+    static-location: classpath:/static
   thymeleaf:
     prefix: classpath:templates/
     suffix: .html
