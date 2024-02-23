@@ -3,7 +3,7 @@
     <mapper namespace="com.prod.order.mapper.product.ProductMapper">
 
     <select id="getProductList" resultType="com.prod.order.domain.product.Product">
-        select seq, prod_cd, price, reg_dts, regr_no
+        select seq, prod_cd, ctgr_nm, prod_nm, std, color, price, note, reg_dts, regr_no
         from product
     </select>
 </mapper>

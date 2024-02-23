@@ -24,7 +24,7 @@ public class ProductController {
     public ModelAndView product(){
         ModelAndView view = new ModelAndView();
 
-        view.addObject("", productService.getProductList());
+        view.addObject("productList", productService.getProductList());
         view.setViewName("/page/product");
         return view;
     }
