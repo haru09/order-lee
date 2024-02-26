@@ -31,7 +31,8 @@ dependencies {
 	implementation("org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.3")
 
 
-	runtimeOnly("com.mysql:mysql-connector-j") 			// Mysql Connector
+	//runtimeOnly("com.mysql:mysql-connector-j") 			// Mysql Connector
+	runtimeOnly("org.mariadb.jdbc:mariadb-java-client")    // mariadb connector
 	compileOnly("org.projectlombok:lombok")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	annotationProcessor("org.projectlombok:lombok")
