@@ -49,10 +49,15 @@ spring:
 #    driver: com.mysql.cj.jdbc.Driver     #mysql.driver
 #    jdbc-url: jdbc:mysql://127.0.0.1:3306/lanterlt?serverTimezone=Asia/Seoul&characterEncoding=UTF-8 # Database이름 ?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
     driver-class-name: org.mariadb.jdbc.Driver
-    jdbc-url: jdbc:mariadb://localhost:3306/lanterlt?characterEncoding=UTF-8&serverTimezone=UTC
-    username: root
+    #jdbc-url: jdbc:mariadb://localhost:3306/lanterlt?characterEncoding=UTF-8&serverTimezone=UTC
+    jdbc-url: ENC(DctImt+AR5wFzaPVWnB44DkIKt30GdFw9qDRSpVsB5JML6CEkauX66CVJN3sH24hhWW6jZh0pQgDt7AE/PHzEMq87ziQU5gUNyfuzdRt3gP1qK/H4iTY+eVK2tk4FOz0VkoCM/9lJ2n8PPGEaMpw5CA7eek2hXcBHfJhN590FkE=)
+    username: lanterlt
     password: dkagh3421@@
     mapper-locations: classpath:/mapper/**/*.xml
+
+jasypt:
+  encryptor:
+    bean: jasyptEncryptor
 
 mybatis:
   configuration:
