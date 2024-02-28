@@ -46,10 +46,7 @@ spring:
     cache: false
     check-template-location: true
   datasource:
-#    driver: com.mysql.cj.jdbc.Driver     #mysql.driver
-#    jdbc-url: jdbc:mysql://127.0.0.1:3306/lanterlt?serverTimezone=Asia/Seoul&characterEncoding=UTF-8 # Database이름 ?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
     driver-class-name: org.mariadb.jdbc.Driver
-    #jdbc-url: jdbc:mariadb://localhost:3306/lanterlt?characterEncoding=UTF-8&serverTimezone=UTC
     jdbc-url: ENC(uI9MhH2yqX42yzPLGFJX9L/Fc3aAs7Qrr9FKrYgVWMPzsSsMYQeftF6lHMCuKUSEuhPAH5pd8x8vKRWQfe5E8wUqmTcaYuPEKI7jYGOpkoEdd/iucuwhnnsUFtgrHINJKDawjieZqNwQunywI1+4PMhiCzMn2Ick8/lRatHQhKI=)
     username: ENC(FHwM643hJ8dRVPbx6/zkdK+DzTOizOGesKeMgLvFyfP25nKXoHdShmxuCzjge3xH)
     password: ENC(iWTND4viKjOtfW0x6DWyYv6n/dRqH0a8s/2GBBPVwhnQzLJPX4AAeLF2eqpCJlj4)
