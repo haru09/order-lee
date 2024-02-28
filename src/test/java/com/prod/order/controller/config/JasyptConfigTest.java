@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 public class JasyptConfigTest {
     @Test
     void stringEncryptor() {
-        String url = "DB URL";
+        String url = "jdbc:mariadb://lanterlt.cafe24.com:3306/lanterlt?serverTimezone=Asia/Seoul&characterEncoding=UTF-8";
         String username = "userId";
         String password = "password";
 
@@ -18,7 +18,7 @@ public class JasyptConfigTest {
 
     public String jasyptEncoding(String value) {
 
-        String key = "encryptKey";
+        String key = "studydb";
         StandardPBEStringEncryptor pbeEnc = new StandardPBEStringEncryptor();
         pbeEnc.setAlgorithm("PBEWITHHMACSHA512ANDAES_256");
         pbeEnc.setPassword(key);

@@ -47,7 +47,7 @@ spring:
     check-template-location: true
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
-    jdbc-url: ENC(uI9MhH2yqX42yzPLGFJX9L/Fc3aAs7Qrr9FKrYgVWMPzsSsMYQeftF6lHMCuKUSEuhPAH5pd8x8vKRWQfe5E8wUqmTcaYuPEKI7jYGOpkoEdd/iucuwhnnsUFtgrHINJKDawjieZqNwQunywI1+4PMhiCzMn2Ick8/lRatHQhKI=)
+    jdbc-url: ENC(3FxC+SF9BKf8pLXjaommiVXU9FZR5mMBjEr5qn4lBo9fol5a9oMShpyP5J4tS75XGJIglg5cUcVG8G3cDgWfLIZqNeupg/US4gNr+5XJ97BdJieqgHb3Z0lCaSsD0nVru+YjNkejR3n7XqDH7BTRZdfH12fF3kP07wJjDNMq3aqbsF6PA5+etiY9ZhC2keU+)
     username: ENC(FHwM643hJ8dRVPbx6/zkdK+DzTOizOGesKeMgLvFyfP25nKXoHdShmxuCzjge3xH)
     password: ENC(iWTND4viKjOtfW0x6DWyYv6n/dRqH0a8s/2GBBPVwhnQzLJPX4AAeLF2eqpCJlj4)
     mapper-locations: classpath:/mapper/**/*.xml
