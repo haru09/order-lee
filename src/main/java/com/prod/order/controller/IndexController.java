@@ -10,16 +10,14 @@ import org.springframework.web.servlet.ModelAndView;
 @RequiredArgsConstructor
 @Slf4j
 @Controller
-public class ProductController {
+public class IndexController {
 
     private final ProductService productService;
 
-    @GetMapping("/product")
-    public ModelAndView product(){
-        ModelAndView view = new ModelAndView();
+//    @GetMapping("/")
+//    public String home(){
+//        log.info("productList: {}", productService.getProductList());
+//        return "/index/home";
+//    }
 
-        view.addObject("productList", productService.getProductList());
-        view.setViewName("/prod/product");
-        return view;
-    }
 }

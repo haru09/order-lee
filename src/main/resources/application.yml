@@ -38,7 +38,7 @@ spring:
   resource:
     static-location: classpath:/static
   thymeleaf:
-    prefix: classpath:templates/
+    prefix: classpath:templates/page/
     suffix: .html
     enabled: true
     restart:
