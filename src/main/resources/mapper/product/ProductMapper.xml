@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-    <mapper namespace="com.prod.order.mapper.product.ProductMapper">
 
-    <select id="getProductList" resultType="com.prod.order.domain.product.Product">
+<mapper namespace="com.prod.order.mapper.product.ProductMapper">
+
+    <select id="getProductList" resultType="com.prod.order.model.product.Product">
         select seq, prod_cd, ctgr_nm, prod_nm, std, color, price, note, reg_dts, regr_no
         from product
     </select>

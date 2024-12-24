@@ -56,7 +56,7 @@ spring:
       add-mappings: true # 정적 리소스 매핑 활성화
   mvc:
     #static-path-pattern: "/**" # 정적 리소스 매핑 경로 (기본값: "/**")
-    static-path-pattern: "/static/**" # 정적 리소스 매핑 경로 (기본값: "/**")
+    static-path-pattern: "/static/**" # 정적 리소스 매핑 경로 (기본값: "/**") 위 방식으로 하니 static 매핑 경로가 안먹혀 정확히 기재
 
 logging:
   level:

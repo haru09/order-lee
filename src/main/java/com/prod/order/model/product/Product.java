@@ -1,6 +1,5 @@
-package com.prod.order.domain.product;
+package com.prod.order.model.product;
 
-import lombok.Data;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;

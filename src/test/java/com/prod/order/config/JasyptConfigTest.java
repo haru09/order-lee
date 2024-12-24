@@ -1,4 +1,4 @@
-package com.prod.order.controller.config;
+package com.prod.order.config;
 
 import org.jasypt.encryption.pbe.StandardPBEStringEncryptor;
 import org.jasypt.iv.RandomIvGenerator;
