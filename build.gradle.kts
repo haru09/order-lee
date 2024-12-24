@@ -57,3 +57,20 @@ dependencies {
 	implementation("com.github.ulisesbocchio:jasypt-spring-boot-starter:3.0.5")
 
 }
+
+/*
+ * 의존성 중복 확인 의존성 트리에서 충돌이 발생할 가능성이 높은 부분 통일.
+ * 예를 들어, org.slf4j 관련 라이브러리에서 서로 다른 버전이 포함되어 있으면 하나로 통일
+ */
+configurations.all {
+	resolutionStrategy.eachDependency {
+		if (requested.group == "org.slf4j") {
+			useVersion("2.0.11")
+		}
+	}
+}
+
+// 특정 종속성 제외 중복된 라이브러리를 제외
+tasks.named<org.springframework.boot.gradle.tasks.bundling.BootJar>("bootJar") {
+	duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}

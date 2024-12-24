@@ -36,7 +36,7 @@ devtools: #jsp파일 서버 재시작 없이 바로 적용하기
 
 spring:
   resource:
-    static-location: classpath:/static
+    static-location: classpath:/static, classpath:/resources/
   thymeleaf:
     prefix: classpath:templates/page/
     suffix: .html
@@ -51,6 +51,17 @@ spring:
     username: ENC(FHwM643hJ8dRVPbx6/zkdK+DzTOizOGesKeMgLvFyfP25nKXoHdShmxuCzjge3xH)
     password: ENC(iWTND4viKjOtfW0x6DWyYv6n/dRqH0a8s/2GBBPVwhnQzLJPX4AAeLF2eqpCJlj4)
     mapper-locations: classpath:/mapper/**/*.xml
+  web:
+    resources:
+      add-mappings: true # 정적 리소스 매핑 활성화
+  mvc:
+    #static-path-pattern: "/**" # 정적 리소스 매핑 경로 (기본값: "/**")
+    static-path-pattern: "/static/**" # 정적 리소스 매핑 경로 (기본값: "/**")
+
+logging:
+  level:
+    org.springframework.security: INFO # Security 디버깅 로그 활성화
+    org.springframework.web: INFO # Spring Web 디버깅 로그 활성화
 
 jasypt:
   encryptor:
