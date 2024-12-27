@@ -46,12 +46,17 @@ dependencies {
 
 	//runtimeOnly("com.mysql:mysql-connector-j") 			// Mysql Connector
 	runtimeOnly("org.mariadb.jdbc:mariadb-java-client")    // mariadb connector
-	compileOnly("org.projectlombok:lombok")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
+
+	compileOnly("org.projectlombok:lombok")
 	annotationProcessor("org.projectlombok:lombok")
 
+	// 테스트용
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.junit.jupiter:junit-jupiter-api")
+	testCompileOnly("org.projectlombok:lombok")
+	testAnnotationProcessor("org.projectlombok:lombok")
+
 
 	// https://mvnrepository.com/artifact/com.github.ulisesbocchio/jasypt-spring-boot-starter
 	implementation("com.github.ulisesbocchio:jasypt-spring-boot-starter:3.0.5")

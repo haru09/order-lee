@@ -36,7 +36,7 @@ public class SecurityConfig {
                         .anyRequest().authenticated() // 나머지는 인증 필요
                 )
                 .formLogin(form -> form
-//                        .loginPage("/login")     // 사용자 정의 로그인 페이지
+                        .loginPage("/login")     // 사용자 정의 로그인 페이지
                         .defaultSuccessUrl("/", true)  // 로그인 성공 후 리다이렉트
                         .permitAll()
                 )
